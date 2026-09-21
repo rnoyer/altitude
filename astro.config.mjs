@@ -3,8 +3,7 @@ import { defineConfig, fontProviders } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rnoyer.com",
-  base: "/altitude",
+  site: "https://altitude.rnoyer.com",
   fonts: [
     {
       provider: fontProviders.fontsource(),
