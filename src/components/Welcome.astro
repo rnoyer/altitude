@@ -6,8 +6,8 @@ import background from "../assets/background.webp";
   <img id="background" src={background.src} alt="" fetchpriority="high" />
   <main>
     <nav id="navbar">
-      <p id="logo">Altitude</p>
-      <a class="link">Contact</a>
+      <a id="logo">Altitude</a>
+      <a href="mailto:rnoyer.dev@gmail.com" class="link">Contact</a>
     </nav>
     <section id="hero">
       <h1>Get your App.</h1>
@@ -16,6 +16,10 @@ import background from "../assets/background.webp";
 </div>
 
 <style>
+  a {
+    all: unset;
+    cursor: pointer;
+  }
   #container {
     color: #fff;
   }
@@ -41,11 +45,13 @@ import background from "../assets/background.webp";
     justify-content: center;
     font-size: 1.5rem;
     text-align: center;
-    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
   }
 
-  a:hover {
+  .link:hover {
     color: black;
+    transition: all 0.3s ease;
   }
 
   #background {
